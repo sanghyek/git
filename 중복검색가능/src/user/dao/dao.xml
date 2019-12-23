@@ -15,5 +15,5 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <update id="update" parameterType="xmlEX">update test set pw=#{pw} where id=#{id};</update>
 <delete id="delete" parameterType="xmlEX">delete from test where id=#{id};</delete>
 <select id="select" parameterType="xmlEX" resultType="xmlEX">select * from test;</select>
-<select id="selectcheck" resultType="xmlEX">select id * from test;</select>
+<select id="selch"  resultType="String">select id from test where id=#{id};</select>
 </mapper>

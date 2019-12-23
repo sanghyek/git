@@ -61,6 +61,12 @@ public class TestDao {
 		sqlsession.commit();
 		sqlsession.close();		
 	}
+	public String mapperselch(Bean obb) {
+		SqlSession sqlsession = factory.openSession();
+		String ab=sqlsession.selectOne("selch",obb);
+		sqlsession.close();	
+		return ab;
+	}
 	
 
 }
