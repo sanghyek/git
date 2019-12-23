@@ -1,0 +1,28 @@
+(내가만든 DB명= dataEX)
+
+
+show databases;(데이터베이스 목록을 본다)
+
+use DB명;(DB를 접속)
+
+show tables;(테이블 목록을 본다)
+
+
+create, alter, drop
+
+create database DB명;(데이터베이스 생성)
+create table 테이블명(필드명 datatype[varchar(크기)/int/date]); = 필드를 만드는다
+
+desc 테이블명;(테이블 구조를 본다)
+
+select * from 테이블명;() (모든자료확인)
+
+select 필드명 from 테이블명;(원하는필드만 확인)
+
+insert into 테이블(필드명)values(필드안에들어갈자료[글자가 들어갈경우 ''쓴다]) =입력
+
+delete from 테이블;(테이블 지우기)
+
+delete from 테이블 where 필드명(id)=내용 {대상과 일치하는 줄을 지운다}
+
+update ex(테이블) set id(필드명)='내용' where id(필드명)='(변경내용)';
