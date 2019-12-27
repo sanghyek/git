@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="java.util.ArrayList" %>
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+ </head>
+ <body>
+  <h2>표현언어에서 자바빈즈 getter 호출</h2>
+
+<jsp:useBean id="stu" class="javabean.Student" scope="page">
+   <jsp:getProperty name="stu" property="id"/><br>
+</jsp:useBean>
+
+	${user.id}<br>
+	${user.name}<br>
+	${user.snum}<br>
+	${user.year}<br>
+	${user.pass}<br>
+	${user.email}<br>
+
+ </body>
+</html>
